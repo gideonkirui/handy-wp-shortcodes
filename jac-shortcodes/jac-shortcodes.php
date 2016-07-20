@@ -40,9 +40,12 @@ add_action( 'wp_enqueue_scripts', 'jac_add_styles' );
 // ------------------------------------
 function well_func( $atts, $content = null ){
 	$a = shortcode_atts( array(
-		'class'	=> ''
+		'class'	=> '',
+		'dark' => ''
 		), $atts);
-	return '<div class="jac-well ' . $a["class"] . '">' . '<pre>' . trim($content, " \n\r\0\x0B") . '</pre></div>';
+
+	$isDark = isset($a['dark']) && $a['dark'] == 'true' ? true : false;
+	return '<div class="jac-well ' . $a["class"] . ($isDark == true ? 'dark-well' : '') . '">' . '<pre>' . trim($content, " \n\r\0\x0B") . '</pre></div>';
 	
 }
 add_shortcode( 'well', 'well_func' );

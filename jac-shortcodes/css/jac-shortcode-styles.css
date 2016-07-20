@@ -1,0 +1,41 @@
+.jac-well {
+	background: #ddd;
+	font-family: courier, monospace;
+	color: #444;
+	border: 1px solid #aaa;
+	padding: 20px;
+	font-size: 16px;
+	margin: 20px 0px;
+
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+
+.dark-well {
+	background: #111;
+	color: #fff;
+}
+
+.jac-well pre {
+	margin: 0px;
+	background-color: transparent;
+	padding: 5% 2%;
+}
+
+.jac-inline-code {
+	background: black;
+	color: white;
+	padding: 3px;
+	/*font-weight: bold;*/
+	font-family: courier, monospace;
+	
+	border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+}
+
+.jac-inline-code span {
+	margin: 0px;
+	background-color: transparent;
+}
